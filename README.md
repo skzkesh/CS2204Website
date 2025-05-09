@@ -17,7 +17,7 @@ The project focuses on using **JavaScript** to implement the logic for handling 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/university-website.git
-   cd university-website
+   https://github.com/skzkesh/CS2204Website.git
+   cd Course Work 1 2
 2. Open the project folder in VS Code
 3. Right-click on `index.html` and select **Open with Live Server**.
