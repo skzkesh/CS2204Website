@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Hong Kong Industrial University" content="Design">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <title>Hong Kong Industrial University</title>
+        <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+        <link rel="stylesheet" href="../CSS/design.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <img src ="../Images/logo.png" width="400" height="100" alt="HKIU logo">
+            <h1>Hong Kong Industrial University</h1>
+        </header>
+        <nav>
+            <ul class="navbar_list">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="welcome">
+            <h1>Welcome to HKIU</h1>
+        </div>
+        <div class="title">
+            <h2>Design Page</h2>
+            <h3>Name: Keshia Poedjiono</h3>
+            <h3>SID: 57902018</h3>
+        </div>
+        <div class="explanation">
+            <h1>Javascript</h1>
+            <h2>Event Handler</h2>
+            <p>On my website, I apply two types of event handlers: HTML and Javascript. I assigned the first event handler onclick directly in the Javascript and connected as seen in visit.js line 1 to line 37. The event handler is assigned to the button element. When the button is clicked, the validateForm function in JavaScript will be called, and validation will be performed based on the input given. I also use onclick on my apply page, but I set the event handler directly in the HTML this time. When the button in each form is clicked, it will execute the getRank(this) function, which will append the rank to the table. This code can be seen in every form in my apply.html. The getRank function can be seen in lines 110-147 of the apply.js.</p>
+            <h2>Let and Const</h2>
+            <p>I use the const messages variable for the random messages shown on the program page, as seen in program.js lines 1-3. I also put the video sources, controls, and muted in a const video on lines 29-48. The reason for using const is for the value to remain constant throughout the execution. Const is immutable, which means the value cannot be changed or reassigned. I put those properties in const because they contain information that should stay the same. I also use let inside of the getRank function (apply page line 111 to line 115) because the variable declared with let is limited to the function scope. So, it helps me to prevent the accidental use of variables before they are adequately assigned. It can be seen in the apply page line 85 to line 95.</p>
+            <h2>Class</h2>
+            <p>I created a dictionary of college and majors for each class. Then, I made a class called Major, which will point to the class code of the chosen button. The class will return the major and college of the given class code. I can append that information to my table directly. The class helps me to increase code readability and enhance effectiveness since I do not have to write multiple similar codes. Instead, I need to access them just by using their ID.</p>
+            <br><br>
+            <h1>CSS</h1>
+            <h2>Index</h2>
+            <p>In this section, I will explain all the elements I used for the header, navigation bar, body, and footer parts. For the header and footer background color, I use linear line gradients that go diagonally from top left to bottom right with the color white and light blue respectively (line 12). In the header part, I use text-align: center to make the title and logo in the center, and the same for the footer (line 17 and line 77). The next div is the navigation bar. I made it at the center horizontally. The default color of my lists are white with navy blue as the background (line 25). I added a hover and set the background to white and the blue text, which will appear when we hover over them (lines 57-58). I made each button have the shape of a round corner rectangle by using border-radius: 1em. For every list, I used transition: .3s background-color, which makes the element show gradually(line 54).
+                (line 59). Then, I added an active with the background color yellow that will show up when we click the button (line 63). Lastly, there is a: visit with color rgb(59, 127, 215) that will be shown when we already visit the link (line 67).
+            </p>
+            <p>
+                Margin and padding are 0 for all pages except for dl, dt, dd and ol (line 1-4). I use position relative for the body part in all of my pages where every element is relative to their parents (line 8). Set the width to 100% and margin 0 auto (lines 7 and 9)</p>
+            <h2>Home Page (homePage.css) </h2>
+            <p>For the welcome block, I use text-align center and some other features to control the view (line 1 -7). The basic information block and map are divided using multi column layout where I give each block 50% width, display block, and float left (line 8-24). I used overflow: auto; (line 11) for the basic information so users can still scroll down the overlap content when they minimize the screen. My webpage also helps user to see the location image more clearly by zooming it in when they hover on the image. I use transform: scale(1.3) with border-radius set in #location_image:hover to enable this effect (lines 40-43). This effect can still work properly when we minimize the screen.</p>
+            <h2>About (about.css)</h2>
+            <p>
+            I set the promotional image in width: 100; (line 8) so the size will not exceed the parent element, the body. I also set the width of the about_information and table to 80% (lines 12 and 26) as instructed. There are borders around the basic information developed with a border: 1px solid black. The caption, th, and td are all center-aligned (line 22). When we hover through the td row, the background color will change to rgb(153, 156, 169); and the font-weight will turn bold (lines 60-61). This is an exception for the head row.
+            </p>
+            <h2>Apply (apply.css)(printApply.css)</h2>
+            <p>I put the welcome block at the center of the page. For each college, the list of majors will be shown when we hover over the headings. Before the hover, the display of college lists are hidden, but after the hover, it become a display block (example, line 38-49). To make the color stay white after we move from the heading, I use college:has(~ .class:hover) with the background color white (line 55). All the headings are set with the same width, which is 30% (line 22). All colleges will have 90% width when we open them (example, line 65). All the majors have display inline and are floating left with some border-radius. I set the image display to block. The border left, right, and bottom are 1 px solid black. The table has the same layout as the previous table. The submit button will change appearance when we hover (line 174-186). I also create print versions only with header, footer, apply, and result section. All the others element are in display: none.</p>
+            <br>
+            <h2>Program Page (program.css)</h2>
+            <p>I set the information block and the video with a multi-column layout in this section using display: inline-block, width 50%, and float left. For the table, I set the even and odd row with different background colors (except head row) using :nth-child(odd) and :nth.child(even) (line 85-91). All the elements align with text-align: center; (line 70).</p>
+            <br>
+            <h2>Visit Page (visit.css)</h2>
+            <p>The welcome block is set in the center with the text-align center, line height: 20px, display: block, overflow: hidden, etc. The location and location detail block are multi-column layout which was created with width: 50%, float: left, and other setting. The location image will zoom in when we hover on it. I use transform: scale(1.3) (line 25) and border-radius: 20px (line 26) for it. The legend is modified with font-weight: bold, background color, border-radius, and box-shadow (lines 71-78). The form is aligned using a table, text-align left, and text-align right (lines 62-70). Last, the check availability and reset buttons are designed with border-radius, font-family, and padding. They will change color and font size in hover mode.</p>
+            <br>
+            <h2>Contact Page (contact.css)</h2>
+            <p>The information is displayed in a table. The td row of the table will change color when we hover on it. There is a background image on the top of the table. I use background-image: URL("../Images/contact.jpeg”);, background-repeat: no-repeat;, opacity: 0.3; and another element to set the background (lines 1 -7). On the contact, there is an animation for the contact us block. I use keyframes animation for the flow of animation. Others element that I use are transform: translate(-50%, -50%),  position absolute, text-transform: uppercase, animation: animation 5s infinite, and animation direction: normal. (Line 8-47).</p>
+            <br>
+        </div>
+        <footer>
+            <img src ="../Images/footer_logo.png" width="300" height="100" alt="HKIU logo">
+            <p>&copy; CityU 2023 - sources of images and text from Wikipedia and Courtesy of Icon pack by Icons8 - designed by <a href="design.html">Keshia Poedjiono</a></p>
+        </footer>
+    </body>
+</html>

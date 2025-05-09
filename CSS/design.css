@@ -1,0 +1,19 @@
+.welcome {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.title {
+    margin-top: 20px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.explanation {
+    padding: 30px;
+    text-align: justify;
+}

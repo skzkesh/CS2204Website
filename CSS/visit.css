@@ -1,0 +1,92 @@
+.welcome {
+    background-color: rgb(202, 227, 249);
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    padding: 30px;
+    line-height: 20px;
+}
+.location {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    height: 750px;
+}
+.location img {
+    margin-top: 90px;
+    width: 85%;
+    height: auto;
+    transition: .3s;
+}
+.location img:hover {
+    transform: scale(1.3);
+    border-radius: 20px;
+}
+.location_detail {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    overflow: hidden;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    text-align: left;
+    padding-top: 250px;
+}
+.location_detail h3, p {
+    padding-left: 30px;
+    padding-top: 25px;
+}
+.reservation {
+    padding: 30px;
+    clear: both;
+}
+.reservation h3{
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+.reservation fieldset {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid rgb(20, 53, 99);
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 30px;
+}
+.reservation table {
+    margin-top: -20px;
+    text-align: right;
+}
+.reservation #left_date{
+    text-align: left;
+}
+.reservation #left_visitors {
+    text-align: left;
+}
+.reservation #left_time {
+    text-align: left;
+}
+.reservation legend {
+    font-weight: bold;
+    background: rgb(20, 53, 99);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 4px rgb(255, 255, 255)
+}
+.submit_button {
+    margin: 10px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    border-radius: 8px;
+}
+.submit_button:hover {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    background-color: rgb(47, 45, 58);
+    color: white;
+}

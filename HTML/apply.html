@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Hong Kong Industrial University" content="Apply">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <title>Hong Kong Industrial University</title>
+        <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+        <link rel="stylesheet" href="../CSS/apply.css" type="text/css">
+        <link rel="stylesheet" media="print" href="../css/printApply.css">
+    </head>
+
+    <body>
+        <header>
+            <img src ="../Images/logo.png" width="400" height="100" alt="HKIU logo">
+            <h1>Hong Kong Industrial University</h1>
+        </header>
+        <nav>
+            <ul class="navbar_list">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="welcome">
+            <h3>Welcome to HKIU</h3>
+        </div>
+        <div class="apply">
+            <h2>Common Application to Undergraduate Program</h2>
+            <h3 class="coe" onclick="myEng()">College of Engineering</h3>
+            <h3 class="cos" onclick="mySci()">College of Science</h3>
+            <h3 class="cois" onclick="myIS()">College of Interdisciplinary Studies</h3>
+            <div class="eng">
+                <form action="#" method="get">
+                <img src="../Images/cs.png" width="200" height="200" alt="Image of Computer Science and Technology">
+                <label for="CS">BSc in Computer Science and Technology</label>
+                <input type="number" name="CS" value="">
+                <input type="button" value="rank of choice" id="CS" onclick="getRank(this);">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/ei.png" width="200" height="200" alt="Image of Electronic Information">
+                <label for="EI">BEng in Electronic Information</label>
+                <input type="number" name="EI" value="">
+                <input type="button" value="rank of choice" id="EI" onclick="getRank(this)">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/mse.png" width="200" height="200" alt="Image of Materials Science and Engineering">
+                <label for="MSE">BEng in Materials Science and Engineering</label>
+                <input type="number" name="MSE" value="">
+                <input type="button" value="rank of choice" id="MSE" onclick="getRank(this)">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/mc.png" width="200" height="200" alt="Image of Materials and Chemials">
+                <label for="MC">BEng in Materials and Chemicals</label>
+                <input type="number" name="MC" value="">
+                <input type="button" value="rank of choice" id="MC" onclick="getRank(this)">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/est.png" width="200" height="200" alt="Image of Electronic Science and Technology">
+                <label for="EST">BSc in Electronic Science and Technology</label>
+                <input type="number" name="EST" value="">
+                <input type="button" value="rank of choice" id="EST" onclick="getRank(this)">
+                </form>
+                
+            </div>
+            <div class="science">
+                <form action="#" method="get">
+                <img src="../Images/phy.png" width="200" height="200" alt="Image of Physics">
+                <label for="PHY">BSc in Physics BSc in Physics</label>
+                <input type="number" name="PHY" value="">
+                <input type="button" value="rank of choice" id="PHY" onclick="getRank(this)">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/chem.png" width="200" height="200" alt="Image of Chemistry">
+                <label for="CHEM">BSc in Chemistry BSc in Chemistry</label>
+                <input type="number" name="CHEM" value="">
+                <input type="button" value="rank of choice" id="CHEM" onclick="getRank(this)">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/bio.png" width="200" height="200" alt="Image of Biology">
+                <label for="BIO">BSc in Biology BSc in Biology</label>
+                <input type="number" name="BIO" value="">
+                <input type="button" value="rank of choice" id="BIO" onclick="getRank(this)">
+                </form>
+                
+            </div>
+            <div class="IS">
+                <form action="#" method="get">
+                <img src="../Images/cogs.png" width="200" height="200" alt="Image of Cognitive Science">
+                <label for="COGS">BSc in Cognitive Science</label>
+                <input type="number" name="COGS" value="">
+                <input type="button" value="rank of choice" id="COGS" onclick="getRank(this)">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/be.png" width="200" height="200" alt="Image of Biomedical Engineering">
+                <label for="BE">BEng in Biomedical Engineering</label>
+                <input type="number" name="BE" value="">
+                <input type="button" value="rank of choice" id="BE" onclick="getRank(this)">
+                </form>
+                
+                <form action="#" method="get">
+                <img src="../Images/bm.png" width="200" height="200" alt="Image of Biology and Medicine">
+                <label for="BM">BSc in Biology and Medicine</label>
+                <input type="number" name="BM" value="">
+                <input type="button" value="rank of choice" id="BM" onclick="getRank(this)">
+                </form>
+                
+            </div>
+        </div>
+        <div class="result">
+            <h2>Your Chosen Major:</h2>
+            <h3>Last change time: </h3><h3 id="time"></h3>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>College</th>
+                        <th>Major</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><b>Total Number of Majors Applied: <span id="noMajor"></span></b></p>
+            <br>
+            <form action="#" method="get" id="submit_form">
+                <input type="submit" value="submit" class="submit_button" onclick="checkSubmit(event)">
+                <input type="reset" value="clear" class="clear_button">
+            </form>
+            <br>
+            <p id="warning"></p>
+        </div>
+        <footer>
+            <img src ="../Images/footer_logo.png" width="300" height="100" alt="HKIU logo">
+            <p>&copy; CityU 2023 - sources of images and text from Wikipedia and Courtesy of Icon pack by Icons8 - designed by <a href="design.html">Keshia Poedjiono</a></p>
+        </footer>
+        <script src="../Javascript/apply.js"></script>
+    </body>
+</html>
